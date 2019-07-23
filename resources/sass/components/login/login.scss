@@ -1,0 +1,113 @@
+$defaultColor: #337ab7;
+
+.main section {
+  width: 100%;
+  max-width: 700px;
+  margin: 8em auto auto;
+  position: relative;
+
+  h1 {
+    padding: .5em 1em;
+    color: white;
+    text-transform: uppercase;
+    background-color: $defaultColor;
+    text-align: center;
+    margin-bottom: 0;
+
+    .bolder {
+      font-weight: 600;
+    }
+  }
+
+  .login_box {
+    width: 100%;
+    padding: 3em 7em 5em;
+    color: #000;
+    background-color: white;
+
+    ol {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-top: 1em;
+        position: relative;
+        font-size: 20px;
+
+        label {
+          display: inline-block;
+          max-width: 100%;
+          margin-bottom: 5px;
+          font-weight: bold;
+          color: $defaultColor;
+        }
+
+        input {
+          -webkit-transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          -o-transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          font-size: 28px;
+          height: 2.4em;
+          padding-left: 2em;
+          padding-right: 1em;
+          width: 100%;
+          border-radius: 0;
+          outline: 0;
+          border: 0;
+          font-family: 'Lato', sans-serif;
+          font-weight: 100;
+          background-color: rgb(232, 240, 254) !important;
+          background-image: none !important;
+          color: rgb(0, 0, 0) !important;
+
+          &:focus {
+            border-left: 10px solid #3EA9F5;
+          }
+          ~ label.error {
+            width: 100%;
+            bottom: -20px;
+            font-size: 12px;
+            background: #000;
+            color: #FFF;
+            left: 0;
+          }
+
+          ~ img.fa {
+            position: absolute;
+            top: 33px;
+            bottom: 0;
+            left: 0;
+            height: 1em;
+            margin: 1.3em 1.3em 1.3em 1em;
+            color: #BABABA;
+          }
+
+          ~ a {
+            position: absolute;
+            top: 33px;
+            bottom: 0;
+            margin: auto;
+            height: 1em;
+            right: 0;
+            margin-right: 1em;
+          }
+        }
+
+        .fa-user-login {
+          height: auto!important;
+          width: 26px;
+        }
+
+        .fa-password-lock {
+          height: auto!important;
+          width: 22px;
+        }
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}
